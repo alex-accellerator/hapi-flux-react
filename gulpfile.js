@@ -11,7 +11,7 @@ var config = {
 
 gulp.task('jsx', function (fn) {
     return gulp.src(config['jsx-source'])
-        //.pipe(cache('jsx'))
+        .pipe(cache('jsx'))
         .pipe(react())
         .pipe(rename(function (path) {
             path.dirname = path.dirname.replace('-jsx', '');
