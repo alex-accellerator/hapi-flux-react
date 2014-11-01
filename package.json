@@ -1,0 +1,27 @@
+{
+  "name": "hapi-flux-react",
+  "version": "0.1.0",
+  "description": "Hapi, Flux & React",
+  "main": "gulpfile.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "^3.8.9",
+    "gulp-cached": "^1.0.1",
+    "gulp-react": "^2.0.0",
+    "gulp-rename": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/janjarfalk/hapi-flux-react.git"
+  },
+  "author": "Jan Järfalk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janjarfalk/hapi-flux-react/issues"
+  },
+  "homepage": "https://github.com/janjarfalk/hapi-flux-react"
+}
