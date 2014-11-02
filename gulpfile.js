@@ -6,16 +6,13 @@ var cache = require('gulp-cached');
 
 // Config
 var config = {
-    'jsx-source': './**/*-jsx/*.jsx'
+    'jsx-source': './**/*.jsx'
 };
 
 gulp.task('jsx', function (fn) {
     return gulp.src(config['jsx-source'])
         .pipe(cache('jsx'))
         .pipe(react())
-        .pipe(rename(function (path) {
-            path.dirname = path.dirname.replace('-jsx', '');
-        }))
         .pipe(gulp.dest('./'));
 });
 

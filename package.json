@@ -4,12 +4,15 @@
   "description": "Hapi, Flux & React",
   "main": "gulpfile.js",
   "dependencies": {
+    "react": "^0.12.0",
+    "underscore": "^1.7.0"
   },
   "devDependencies": {
     "gulp": "^3.8.9",
     "gulp-cached": "^1.0.1",
     "gulp-react": "^2.0.0",
-    "gulp-rename": "^1.2.0"
+    "gulp-rename": "^1.2.0",
+    "hapi": "^7.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
