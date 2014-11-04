@@ -8,6 +8,12 @@ config.server = {
   options: {}
 };
 
+config.cache = {
+  expiresIn: 15 * 60 * 1000, // 15 minute
+  staleIn: 10 * 60 * 1000, // 10 minutes
+  staleTimeout: 100
+};
+
 config.good = {
 
 };

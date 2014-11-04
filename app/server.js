@@ -18,6 +18,12 @@ server.pack.register(serverPlugins, function (err) {
     throw err;
   }
 
+  server.method({
+    name: 'getPlaylists',
+    fn: require('./methods/getplaylists.js'),
+    options: {cache: config.cache}
+  });
+
   server.route(require('./routes/server-route.js'));
   server.route(require('./routes/static-route.js'));
 
