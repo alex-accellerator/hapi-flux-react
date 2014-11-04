@@ -5,6 +5,11 @@ var ActionTypes = {
     Route: {
         INIT: null,
         CHANGE: null
+    },
+    Playlist: {
+        INIT: null,
+        CLICK_PLAYLIST: null,
+        RECEIVE_ALL: null
     }
 };
 
