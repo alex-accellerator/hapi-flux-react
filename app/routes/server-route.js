@@ -5,7 +5,7 @@ var router = require('../router.js');
 var boom = require('boom')
 var JSONStringifySafe = require('json-stringify-safe');
 var App = React.createFactory(require('../app.js'));
-var RootView = React.createFactory(require('../pages/Root/Root.js'));
+var RootView = React.createFactory(require('../pages/BasePage/BasePage.js'));
 var fetcher = require('../fetcher.js');
 
 module.exports = {
