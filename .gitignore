@@ -1,5 +1,6 @@
 .idea
 /node_modules
-app/sections/*.js
-app/pages/*.js
-server/views/*.js
+app/sections/**/*.js
+app/pages/**/*.js
+app/static
+npm-debug.log
