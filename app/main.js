@@ -8,7 +8,7 @@ var RouteActionCreators = require('./actions/RouteActionCreators.js');
 function onDOMContentLoaded() {
   document.removeEventListener('DOMContentLoaded', onDOMContentLoaded);
 
-  var mountNode = document.getElementById('root');
+  var mountNode = document.getElementById('page');
   var bootData = document.getElementById('bootdata').innerHTML;
   var props = JSON.parse(bootData);
 

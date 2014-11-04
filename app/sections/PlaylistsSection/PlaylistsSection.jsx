@@ -24,13 +24,11 @@ var PlaylistSection = React.createClass({
         this.setState({playlists: PlaylistStore.getAll()});
     },
     render: function () {
-
         var items = this.state.playlists.map(function (playlist) {
             return (
                 <li key={playlist.id}>{playlist.label}</li>
             );
         });
-
         return (
             <section className="PlaylistsSection">
                 <ul>{items}</ul>

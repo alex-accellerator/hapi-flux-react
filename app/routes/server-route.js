@@ -53,7 +53,7 @@ function serverRouteHandler(request, reply) {
     Object.assign(props.data, result);
 
     var rootProps = {
-      appMarkup: React.renderToString(App(props)),
+      app: App(props),
       bootData: JSONStringifySafe(props)
     };
 

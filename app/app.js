@@ -36,9 +36,7 @@ var App = React.createClass({displayName: 'App',
     }
 
     return (
-      React.createElement("div", {className: "app"}, 
         section
-      )
     );
   }
 

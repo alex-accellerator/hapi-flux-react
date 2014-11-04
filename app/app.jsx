@@ -36,9 +36,7 @@ var App = React.createClass({
     }
 
     return (
-      <div className='app'>
-        {section}
-      </div>
+        section
     );
   }
 

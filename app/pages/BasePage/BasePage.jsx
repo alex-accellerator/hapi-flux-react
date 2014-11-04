@@ -17,14 +17,7 @@ var BasePage = React.createClass({
                     DOM.link({rel: 'stylesheet', href: '/static/bundle.css'})),
 
                 DOM.body(null,
-
-                    DOM.div({
-                        id: 'root',
-                        dangerouslySetInnerHTML: {
-                            __html: this.props.appMarkup
-                        }
-                    }),
-
+                    DOM.div({id:'page'}, this.props.app),
                     DOM.script({
                         id: 'bootdata',
                         type: 'application/json',

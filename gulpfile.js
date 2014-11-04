@@ -17,17 +17,6 @@ var config = {
     'js-target': './app/static/'
 };
 
-var paths = {
-    //jsxSrc: './app/**/*.jsx',
-    //jsxOutput: './',
-    //lessSrc: './app/style/*.less',
-    //lessSrc: './app/**/*.less',
-    //lessOutput: './server/static',
-    browserifyEntry: './app/main.js',
-    browserifyBundleName: 'bundle.js',
-    browserifyOutput: './server/static'
-};
-
 gulp.task('jsx', function (fn) {
     return gulp.src(config['jsx-source'])
         .pipe(cache('jsx'))
@@ -37,6 +26,7 @@ gulp.task('jsx', function (fn) {
 
 gulp.task('less', function () {
     return gulp.src(config['less-source'])
+        .pipe(cache('less'))
         .pipe(sourcemaps.init())
         .pipe(less({compress: false}))
         .pipe(concat('bundle.css'))
