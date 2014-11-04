@@ -14,7 +14,6 @@ var PlaylistSection = React.createClass({
     },
     componentDidMount: function () {
         PlaylistStore.subscribe(this.onStoreChange);
-        PlaylistActionCreators.fetchAll();
     },
 
     componentWillUnmount: function () {

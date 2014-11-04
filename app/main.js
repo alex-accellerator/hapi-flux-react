@@ -3,7 +3,7 @@
 require('es6-shim');
 var React = require('react');
 var App = React.createFactory(require('./app.js'));
-var RouteActionCreators = require('./actions/route-actioncreators.js');
+var RouteActionCreators = require('./actions/RouteActionCreators.js');
 
 function onDOMContentLoaded() {
   document.removeEventListener('DOMContentLoaded', onDOMContentLoaded);

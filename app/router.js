@@ -7,7 +7,7 @@ var routes = [{
   path: '/',
   name: 'start',
   component: React.createFactory(require('./pages/StartPage/StartPage')),
-  fetcher: [{method: 'getPlaylists', name: 'playlists'}]
+  fetcher: []
 },
 {
   path: '/about',
